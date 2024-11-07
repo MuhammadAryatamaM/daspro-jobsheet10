@@ -23,8 +23,16 @@ public class BioskopWithScanner15Modif3 {
                     nama = sc.nextLine();
                     System.out.print("Masukkan baris: ");
                     baris = sc.nextInt();
+                    if (baris > 4) {
+                        System.out.println("Baris tidak valid, silakan input ulang");
+                        continue;
+                    }
                     System.out.print("Masukkan kolom: ");
                     kolom = sc.nextInt();
+                    if (kolom > 2) {
+                        System.out.println("Kolom tidak valid, silakan input ulang");
+                        continue;
+                    }
                     sc.nextLine();
                     penonton[baris-1][kolom-1] = nama;
                 
